@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- *_printf - formatted output conversion and print data.
- *@format: input string
+ * _printf - formatted output conversion and print data.
+ * @format: input string.
  *
  * Return: number of chars printed.
  */
@@ -32,8 +31,8 @@ int _printf(const char *format, ...)
 				if (function == NULL)
 				{
 					if (format[i + 1] == ' ' && !format[i + 2])
-					return (-1);
-				handl_buf(buffer, format[i], ibuf), len++, i--;
+						return (-1);
+					handl_buf(buffer, format[i], ibuf), len++, i--;
 				}
 				else
 				{
@@ -43,10 +42,10 @@ int _printf(const char *format, ...)
 			} i++;
 		}
 		else
-				handl_buf(buffer, format[i], ibuf), len++;
-			for (ibuf = len; ibuf > 1024; ibuf -= 1024)
-				;
-		}
-		print_buf(buffer, ibuf), free(buffer), va_end(arguments);
-		return (len);
+			handl_buf(buffer, format[i], ibuf), len++;
+		for (ibuf = len; ibuf > 1024; ibuf -= 1024)
+			;
+	}
+	print_buf(buffer, ibuf), free(buffer), va_end(arguments);
+	return (len);
 }
