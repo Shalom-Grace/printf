@@ -235,14 +235,3 @@ Function That Prints An Integer Begining With 0 And u.
 
 ### ev_print_func.c
 Function That Returns The Amount Of Indetifiers.
-
-
-
-### Authors
-Tolulope Fakunle and Bamidele Adefolaju
-
-------------
-
-### End
-
-Bamidele & Adefolaju @ ALX software engineering programme 2022.
